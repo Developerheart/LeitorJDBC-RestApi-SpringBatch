@@ -1,0 +1,3 @@
+logging:
+  config: C:\\sefaz\\gitlab\\LeitorJDBC-SpringBatch\\config\\log\\log4j.xml
+

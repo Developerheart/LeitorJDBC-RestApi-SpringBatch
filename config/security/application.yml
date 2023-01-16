@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jdbcUrl: jdbc:mysql://172.16.5.167:3306/curso?useUnicode=true&chacactersEncoding=UTF-8?useTimezone=true&serverTimezone=UTC
+    username: leonardo
+    password: 1234
+  batch:
+    jdbc:
+      initialize-schema: always
+
+
+app:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jdbcUrl: jdbc:mysql://172.16.5.167:3306/app?useUnicode=true&chacactersEncoding=UTF-8?useTimezone=true&serverTimezone=UTC
+    username: leonardo
+    password: 1234

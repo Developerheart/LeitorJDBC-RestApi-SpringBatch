@@ -1,0 +1,23 @@
+<Configuration status="DEBUG" xmlns="http://logging.apache.org/log4j/2.0/config">
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm.ss.SSS} [%t] %-5level %logger{36} - %msg%n"></PatternLayout>
+        </Console>
+        <File name="LogToFile" fileName="logs/app.log">
+            <PatternLayout pattern="%d %p %c{1.} [%t] %m%n"></PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.developer.heart.arquivosflatleitorspringbatch" level="info" additivity="false">
+            <AppenderRef ref="LogToFile"></AppenderRef>
+            <AppenderRef ref="LogToConsole"></AppenderRef>
+        </Logger>
+<!--        <Logger name="org.springframework.boot" level="info" additivity="false">-->
+<!--            <AppenderRef ref="LogToConsole"></AppenderRef>-->
+<!--        </Logger>-->
+        <Root level="info">
+            <AppenderRef ref="LogToFile"></AppenderRef>
+            <AppenderRef ref="LogToConsole"></AppenderRef>
+        </Root>
+    </Loggers>
+</Configuration>
