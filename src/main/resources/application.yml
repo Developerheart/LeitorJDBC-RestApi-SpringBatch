@@ -6,3 +6,6 @@ logging:
         batch:
           item:
             database: DEBUG
+rest:
+  api:
+    url: http://localhost:8080/teste/

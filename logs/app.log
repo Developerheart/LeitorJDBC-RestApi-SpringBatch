@@ -747,3 +747,114 @@ Caused by: java.sql.SQLException: Encerrando a execução - Cliente inválido ze
 2023-01-17 08:38:30,960 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
 2023-01-17 08:38:30,960 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
 2023-01-17 08:38:30,971 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 09:29:34,289 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 19508 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 09:29:34,297 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 09:29:35,150 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcCursorJob' defined in class path resource [com/developer/heart/leitorjdbcspringbatch/job/JdbcCursorJobConfig.class]: Unsatisfied dependency expressed through method 'jdbcCursorJob' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcStep' defined in class path resource [com/developer/heart/leitorjdbcspringbatch/step/JdbcStepConfig.class]: Unsatisfied dependency expressed through method 'jdbcStep' parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.batch.item.ItemWriter<com.developer.heart.leitorjdbcspringbatch.dto.Pessoa>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-01-17 09:29:35,158 INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-17 09:29:35,180 ERROR o.s.b.d.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method jdbcStep in com.developer.heart.leitorjdbcspringbatch.step.JdbcStepConfig required a bean of type 'org.springframework.batch.item.ItemWriter' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.batch.item.ItemWriter' in your configuration.
+
+2023-01-17 09:30:02,050 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 23184 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 09:30:02,053 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 09:30:02,842 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 09:30:03,258 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 09:30:03,289 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 09:30:03,315 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 09:30:03,441 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 09:30:03,477 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 09:30:03,633 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 2.064 seconds (JVM running for 2.816)
+2023-01-17 09:30:03,635 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 09:30:03,788 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=21}]
+2023-01-17 09:30:03,834 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 09:30:04,471 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 637ms
+2023-01-17 09:30:04,488 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=21}] and the following status: [COMPLETED] in 670ms
+2023-01-17 09:30:04,491 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 09:30:04,502 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 09:30:04,503 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 09:30:04,510 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 09:30:12,832 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 21788 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 09:30:12,836 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 09:30:13,621 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 09:30:13,913 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 09:30:13,947 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 09:30:13,966 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 09:30:14,068 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 09:30:14,101 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 09:30:14,269 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 1.935 seconds (JVM running for 2.71)
+2023-01-17 09:30:14,271 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 09:30:14,391 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=22}]
+2023-01-17 09:30:14,433 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 09:30:14,562 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 128ms
+2023-01-17 09:30:14,587 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=22}] and the following status: [COMPLETED] in 168ms
+2023-01-17 09:30:14,594 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 09:30:14,608 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 09:30:14,609 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 09:30:14,617 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 09:30:20,628 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 16244 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 09:30:20,632 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 09:30:21,410 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 09:30:21,700 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 09:30:21,731 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 09:30:21,749 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 09:30:21,850 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 09:30:21,885 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 09:30:22,058 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 1.902 seconds (JVM running for 2.793)
+2023-01-17 09:30:22,059 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 09:30:22,184 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=23}]
+2023-01-17 09:30:22,223 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 09:30:22,341 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 118ms
+2023-01-17 09:30:22,356 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=23}] and the following status: [COMPLETED] in 148ms
+2023-01-17 09:30:22,369 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 09:30:22,383 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 09:30:22,383 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 09:30:22,390 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 09:32:07,851 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 2068 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 09:32:07,854 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 09:32:08,630 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 09:32:08,931 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 09:32:08,966 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 09:32:08,986 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 09:32:09,096 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 09:32:09,129 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 09:32:09,298 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 1.945 seconds (JVM running for 2.694)
+2023-01-17 09:32:09,299 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 09:32:09,429 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=24}]
+2023-01-17 09:32:09,470 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 09:32:09,778 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 307ms
+2023-01-17 09:32:09,793 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=24}] and the following status: [COMPLETED] in 340ms
+2023-01-17 09:32:09,798 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 09:32:09,808 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 09:32:09,809 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 09:32:09,816 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 09:32:23,249 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 18544 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 09:32:23,252 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 09:32:24,028 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 09:32:24,501 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 09:32:24,531 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 09:32:24,550 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 09:32:24,660 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 09:32:24,693 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 09:32:24,865 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 2.099 seconds (JVM running for 2.876)
+2023-01-17 09:32:24,866 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 09:32:24,986 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=25}]
+2023-01-17 09:32:25,025 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 09:32:25,197 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 171ms
+2023-01-17 09:32:25,213 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=25}] and the following status: [COMPLETED] in 203ms
+2023-01-17 09:32:25,225 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 09:32:25,239 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 09:32:25,239 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 09:32:25,248 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.

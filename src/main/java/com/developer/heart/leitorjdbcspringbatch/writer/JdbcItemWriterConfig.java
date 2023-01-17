@@ -10,7 +10,7 @@ public class JdbcItemWriterConfig {
 
 
     @Bean
-    public ItemWriter<Cliente> itemWriter() {
+    public ItemWriter<?> itemWriter() {
         return list -> list.forEach(System.out::println);
     }
 
