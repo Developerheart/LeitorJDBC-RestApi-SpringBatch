@@ -24,6 +24,9 @@ public class JdbcStepConfig {
                 .<Cliente, Cliente>chunk(1)
                 .reader(jdbcPagingItemReader)
                 .writer(itemWriter)
+                .faultTolerant()
+                .skip(Exception.class)// dica: criar uma exceção de négocio especifica para cada ocasião
+                .skipLimit(1)
                 .build();
     }
 

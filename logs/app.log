@@ -99,3 +99,651 @@
 2023-01-17 08:19:16,679 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
 2023-01-17 08:19:16,680 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
 2023-01-17 08:19:16,699 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 08:23:23,035 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 22140 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 08:23:23,038 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 08:23:23,667 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 08:23:23,997 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 08:23:24,069 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 08:23:24,095 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 08:23:24,264 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 08:23:24,411 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 08:23:24,498 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 1.938 seconds (JVM running for 2.686)
+2023-01-17 08:23:24,500 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 08:23:24,614 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=5}]
+2023-01-17 08:23:24,662 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 08:23:24,681 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 0
+2023-01-17 08:23:24,682 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading first page: [SELECT * FROM cliente ORDER BY email ASC LIMIT 2]
+2023-01-17 08:23:24,710 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 1
+2023-01-17 08:23:24,710 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading remaining pages: [SELECT * FROM cliente WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+2023-01-17 08:23:24,710 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Using parameterList:[maria@test.com]
+2023-01-17 08:23:24,730 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 2
+2023-01-17 08:23:24,731 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading remaining pages: [SELECT * FROM cliente WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+2023-01-17 08:23:24,731 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Using parameterList:[zeca2@test.com]
+2023-01-17 08:23:24,755 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 3
+2023-01-17 08:23:24,755 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading remaining pages: [SELECT * FROM cliente WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+2023-01-17 08:23:24,755 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Using parameterList:[zeca4@test.com]
+2023-01-17 08:23:24,776 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 4
+2023-01-17 08:23:24,777 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading remaining pages: [SELECT * FROM cliente WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+2023-01-17 08:23:24,777 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Using parameterList:[zeca6@test.com]
+2023-01-17 08:23:24,792 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 5
+2023-01-17 08:23:24,792 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading remaining pages: [SELECT * FROM cliente WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+2023-01-17 08:23:24,792 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Using parameterList:[zeca8@test.com]
+2023-01-17 08:23:24,808 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 146ms
+2023-01-17 08:23:24,823 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=5}] and the following status: [COMPLETED] in 186ms
+2023-01-17 08:23:24,833 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 08:23:24,845 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 08:23:24,845 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 08:23:24,865 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 08:29:45,569 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 5228 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 08:29:45,573 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 08:29:46,337 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 08:29:46,774 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 08:29:46,848 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 08:29:46,869 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 08:29:47,052 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 08:29:47,244 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 08:29:47,342 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 2.348 seconds (JVM running for 3.34)
+2023-01-17 08:29:47,344 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 08:29:47,459 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=6}]
+2023-01-17 08:29:47,510 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 08:29:47,534 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 0
+2023-01-17 08:29:47,535 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading first page: [SELECT * FROM cliente ORDER BY email ASC LIMIT 2]
+2023-01-17 08:29:47,564 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 1
+2023-01-17 08:29:47,566 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading remaining pages: [SELECT * FROM cliente WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+2023-01-17 08:29:47,567 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Using parameterList:[maria@test.com]
+2023-01-17 08:29:47,587 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 2
+2023-01-17 08:29:47,588 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading remaining pages: [SELECT * FROM cliente WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+2023-01-17 08:29:47,588 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Using parameterList:[zeca2@test.com]
+2023-01-17 08:29:47,609 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 3
+2023-01-17 08:29:47,610 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading remaining pages: [SELECT * FROM cliente WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+2023-01-17 08:29:47,611 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Using parameterList:[zeca4@test.com]
+2023-01-17 08:29:47,632 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 4
+2023-01-17 08:29:47,632 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading remaining pages: [SELECT * FROM cliente WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+2023-01-17 08:29:47,633 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Using parameterList:[zeca6@test.com]
+2023-01-17 08:29:47,649 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 5
+2023-01-17 08:29:47,649 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading remaining pages: [SELECT * FROM cliente WHERE ((email > ?)) ORDER BY email ASC LIMIT 2]
+2023-01-17 08:29:47,649 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Using parameterList:[zeca8@test.com]
+2023-01-17 08:29:47,673 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 163ms
+2023-01-17 08:29:47,687 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=6}] and the following status: [COMPLETED] in 198ms
+2023-01-17 08:29:47,691 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 08:29:47,702 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 08:29:47,703 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 08:29:47,713 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 08:30:29,544 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 21432 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 08:30:29,547 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 08:30:30,172 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 08:30:30,476 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 08:30:30,545 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 08:30:30,563 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 08:30:30,698 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 08:30:30,869 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 08:30:30,959 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 1.875 seconds (JVM running for 2.601)
+2023-01-17 08:30:30,960 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 08:30:31,070 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=7}]
+2023-01-17 08:30:31,119 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 08:30:31,137 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 0
+2023-01-17 08:30:31,138 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading first page: [SELECT * FROM cliente ORDER BY email ASC LIMIT 2]
+2023-01-17 08:30:31,204 ERROR o.s.b.c.s.AbstractStep [main] Encountered an error executing step jdbcStepXD in job jdbcCursorJob
+org.springframework.jdbc.UncategorizedSQLException: StatementCallback; uncategorized SQLException for SQL [SELECT * FROM cliente ORDER BY email ASC LIMIT 2]; SQL state [null]; error code [0]; Encerrando a execução - Cliente inválido joao@test.com; nested exception is java.sql.SQLException: Encerrando a execução - Cliente inválido joao@test.com
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1542) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.batch.item.database.JdbcPagingItemReader.doReadPage(JdbcPagingItemReader.java:209) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.item.database.AbstractPagingItemReader.doRead(AbstractPagingItemReader.java:110) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:99) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:180) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:126) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:118) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:71) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:407) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:331) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:273) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:258) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:208) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:152) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:413) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:136) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:320) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:149) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:128) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.24.jar:5.3.24]
+	at jdk.proxy2.$Proxy63.run(Unknown Source) ~[?:?]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.execute(JobLauncherApplicationRunner.java:199) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.executeLocalJobs(JobLauncherApplicationRunner.java:173) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.launchJobFromProperties(JobLauncherApplicationRunner.java:160) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:155) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:150) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:759) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:749) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.7.jar:2.7.7]
+	at com.developer.heart.leitorjdbcspringbatch.LeitorJdbcSpringBatchApplication.main(LeitorJdbcSpringBatchApplication.java:10) ~[classes/:?]
+Caused by: java.sql.SQLException: Encerrando a execução - Cliente inválido joao@test.com
+	at com.developer.heart.leitorjdbcspringbatch.reader.JdbcPagingItemReaderConfig$1.mapRow(JdbcPagingItemReaderConfig.java:39) ~[classes/:?]
+	at com.developer.heart.leitorjdbcspringbatch.reader.JdbcPagingItemReaderConfig$1.mapRow(JdbcPagingItemReaderConfig.java:35) ~[classes/:?]
+	at org.springframework.batch.item.database.JdbcPagingItemReader$PagingRowMapper.mapRow(JdbcPagingItemReader.java:339) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:94) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:61) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:453) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:381) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	... 52 more
+2023-01-17 08:30:31,218 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 99ms
+2023-01-17 08:30:31,243 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=7}] and the following status: [FAILED] in 140ms
+2023-01-17 08:30:31,252 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 08:30:31,263 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 08:30:31,264 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 08:30:31,272 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 08:32:35,721 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 17024 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 08:32:35,725 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 08:32:36,483 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 08:32:36,816 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 08:32:36,906 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 08:32:36,927 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 08:32:37,118 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 08:32:37,285 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 08:32:37,409 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 2.246 seconds (JVM running for 3.199)
+2023-01-17 08:32:37,411 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 08:32:37,563 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=8}]
+2023-01-17 08:32:37,623 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 08:32:37,663 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 0
+2023-01-17 08:32:37,664 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading first page: [SELECT * FROM cliente ORDER BY email ASC LIMIT 2]
+2023-01-17 08:32:37,753 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 130ms
+2023-01-17 08:32:37,772 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=8}] and the following status: [COMPLETED] in 174ms
+2023-01-17 08:32:37,777 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 08:32:37,804 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 08:32:37,804 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 08:32:37,823 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 08:33:09,109 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 18776 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 08:33:09,113 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 08:33:09,739 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 08:33:10,034 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 08:33:10,116 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 08:33:10,135 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 08:33:10,297 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 08:33:10,447 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 08:33:10,531 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 1.908 seconds (JVM running for 2.69)
+2023-01-17 08:33:10,533 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 08:33:10,644 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=9}]
+2023-01-17 08:33:10,690 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 08:33:10,710 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 0
+2023-01-17 08:33:10,710 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading first page: [SELECT * FROM cliente ORDER BY email ASC LIMIT 2]
+2023-01-17 08:33:10,779 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 87ms
+2023-01-17 08:33:10,801 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=9}] and the following status: [COMPLETED] in 125ms
+2023-01-17 08:33:10,806 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 08:33:10,821 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 08:33:10,821 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 08:33:10,829 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 08:33:40,237 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 21140 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 08:33:40,240 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 08:33:40,898 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 08:33:41,196 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 08:33:41,277 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 08:33:41,296 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 08:33:41,445 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 08:33:41,606 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 08:33:41,699 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 1.938 seconds (JVM running for 2.672)
+2023-01-17 08:33:41,700 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 08:33:41,805 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=10}]
+2023-01-17 08:33:41,843 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 08:33:41,862 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 0
+2023-01-17 08:33:41,862 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading first page: [SELECT * FROM cliente ORDER BY email ASC LIMIT 15]
+2023-01-17 08:33:41,937 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 93ms
+2023-01-17 08:33:41,958 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=10}] and the following status: [COMPLETED] in 127ms
+2023-01-17 08:33:41,964 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 08:33:41,975 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 08:33:41,975 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 08:33:41,985 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 08:34:30,326 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 8336 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 08:34:30,329 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 08:34:30,969 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 08:34:31,270 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 08:34:31,352 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 08:34:31,370 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 08:34:31,534 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 08:34:31,689 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 08:34:31,782 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 1.915 seconds (JVM running for 2.63)
+2023-01-17 08:34:31,783 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 08:34:31,893 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=11}]
+2023-01-17 08:34:31,940 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 08:34:31,959 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 0
+2023-01-17 08:34:31,959 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading first page: [SELECT * FROM cliente ORDER BY email ASC LIMIT 15]
+2023-01-17 08:34:32,029 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 89ms
+2023-01-17 08:34:32,051 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=11}] and the following status: [COMPLETED] in 124ms
+2023-01-17 08:34:32,055 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 08:34:32,069 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 08:34:32,070 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 08:34:32,077 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 08:34:45,667 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 18248 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 08:34:45,670 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 08:34:46,325 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 08:34:46,629 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 08:34:46,709 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 08:34:46,741 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 08:34:46,888 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 08:34:47,051 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 08:34:47,146 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 1.981 seconds (JVM running for 2.924)
+2023-01-17 08:34:47,148 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 08:34:47,258 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=12}]
+2023-01-17 08:34:47,307 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 08:34:47,328 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 0
+2023-01-17 08:34:47,329 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading first page: [SELECT * FROM cliente ORDER BY email ASC LIMIT 15]
+2023-01-17 08:34:47,411 ERROR o.s.b.c.s.AbstractStep [main] Encountered an error executing step jdbcStepXD in job jdbcCursorJob
+org.springframework.batch.core.step.skip.NonSkippableReadException: Non-skippable exception during read
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:105) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:126) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:118) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:71) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:407) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:331) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:273) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:258) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:208) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:152) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:413) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:136) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:320) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:149) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:128) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.24.jar:5.3.24]
+	at jdk.proxy2.$Proxy63.run(Unknown Source) ~[?:?]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.execute(JobLauncherApplicationRunner.java:199) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.executeLocalJobs(JobLauncherApplicationRunner.java:173) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.launchJobFromProperties(JobLauncherApplicationRunner.java:160) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:155) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:150) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:759) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:749) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.7.jar:2.7.7]
+	at com.developer.heart.leitorjdbcspringbatch.LeitorJdbcSpringBatchApplication.main(LeitorJdbcSpringBatchApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.jdbc.UncategorizedSQLException: StatementCallback; uncategorized SQLException for SQL [SELECT * FROM cliente ORDER BY email ASC LIMIT 15]; SQL state [null]; error code [0]; Encerrando a execução - Cliente inválido zeca8@test.com; nested exception is java.sql.SQLException: Encerrando a execução - Cliente inválido zeca8@test.com
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1542) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.batch.item.database.JdbcPagingItemReader.doReadPage(JdbcPagingItemReader.java:209) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.item.database.AbstractPagingItemReader.doRead(AbstractPagingItemReader.java:110) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:99) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:87) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	... 45 more
+Caused by: java.sql.SQLException: Encerrando a execução - Cliente inválido zeca8@test.com
+	at com.developer.heart.leitorjdbcspringbatch.reader.JdbcPagingItemReaderConfig$1.mapRow(JdbcPagingItemReaderConfig.java:39) ~[classes/:?]
+	at com.developer.heart.leitorjdbcspringbatch.reader.JdbcPagingItemReaderConfig$1.mapRow(JdbcPagingItemReaderConfig.java:35) ~[classes/:?]
+	at org.springframework.batch.item.database.JdbcPagingItemReader$PagingRowMapper.mapRow(JdbcPagingItemReader.java:339) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:94) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:61) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:453) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:381) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.batch.item.database.JdbcPagingItemReader.doReadPage(JdbcPagingItemReader.java:209) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.item.database.AbstractPagingItemReader.doRead(AbstractPagingItemReader.java:110) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:99) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:87) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	... 45 more
+2023-01-17 08:34:47,420 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 112ms
+2023-01-17 08:34:47,440 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=12}] and the following status: [FAILED] in 150ms
+2023-01-17 08:34:47,446 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 08:34:47,456 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 08:34:47,457 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 08:34:47,465 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 08:34:57,479 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 9572 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 08:34:57,482 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 08:34:58,136 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 08:34:58,437 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 08:34:58,506 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 08:34:58,524 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 08:34:58,659 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 08:34:58,827 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 08:34:58,916 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 1.917 seconds (JVM running for 2.669)
+2023-01-17 08:34:58,918 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 08:34:59,038 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=13}]
+2023-01-17 08:34:59,081 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 08:34:59,101 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 0
+2023-01-17 08:34:59,101 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading first page: [SELECT * FROM cliente ORDER BY email ASC LIMIT 15]
+2023-01-17 08:34:59,168 ERROR o.s.b.c.s.AbstractStep [main] Encountered an error executing step jdbcStepXD in job jdbcCursorJob
+org.springframework.jdbc.UncategorizedSQLException: StatementCallback; uncategorized SQLException for SQL [SELECT * FROM cliente ORDER BY email ASC LIMIT 15]; SQL state [null]; error code [0]; Encerrando a execução - Cliente inválido zeca8@test.com; nested exception is java.sql.SQLException: Encerrando a execução - Cliente inválido zeca8@test.com
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1542) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.batch.item.database.JdbcPagingItemReader.doReadPage(JdbcPagingItemReader.java:209) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.item.database.AbstractPagingItemReader.doRead(AbstractPagingItemReader.java:110) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:99) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:180) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:126) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:118) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:71) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:407) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:331) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:273) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:258) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:208) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:152) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:413) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:136) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:320) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:149) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:128) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.24.jar:5.3.24]
+	at jdk.proxy2.$Proxy63.run(Unknown Source) ~[?:?]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.execute(JobLauncherApplicationRunner.java:199) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.executeLocalJobs(JobLauncherApplicationRunner.java:173) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.launchJobFromProperties(JobLauncherApplicationRunner.java:160) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:155) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:150) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:759) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:749) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.7.jar:2.7.7]
+	at com.developer.heart.leitorjdbcspringbatch.LeitorJdbcSpringBatchApplication.main(LeitorJdbcSpringBatchApplication.java:10) ~[classes/:?]
+Caused by: java.sql.SQLException: Encerrando a execução - Cliente inválido zeca8@test.com
+	at com.developer.heart.leitorjdbcspringbatch.reader.JdbcPagingItemReaderConfig$1.mapRow(JdbcPagingItemReaderConfig.java:39) ~[classes/:?]
+	at com.developer.heart.leitorjdbcspringbatch.reader.JdbcPagingItemReaderConfig$1.mapRow(JdbcPagingItemReaderConfig.java:35) ~[classes/:?]
+	at org.springframework.batch.item.database.JdbcPagingItemReader$PagingRowMapper.mapRow(JdbcPagingItemReader.java:339) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:94) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:61) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:453) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:381) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	... 52 more
+2023-01-17 08:34:59,178 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 96ms
+2023-01-17 08:34:59,204 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=13}] and the following status: [FAILED] in 137ms
+2023-01-17 08:34:59,213 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 08:34:59,232 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 08:34:59,232 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 08:34:59,240 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 08:35:29,033 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 13620 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 08:35:29,038 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 08:35:29,686 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 08:35:29,986 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 08:35:30,055 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 08:35:30,073 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 08:35:30,225 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 08:35:30,387 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 08:35:30,481 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 1.921 seconds (JVM running for 2.674)
+2023-01-17 08:35:30,483 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 08:35:30,608 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=14}]
+2023-01-17 08:35:30,662 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 08:35:30,694 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 0
+2023-01-17 08:35:30,695 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading first page: [SELECT * FROM cliente ORDER BY email ASC LIMIT 5]
+2023-01-17 08:35:30,751 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 1
+2023-01-17 08:35:30,751 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading remaining pages: [SELECT * FROM cliente WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+2023-01-17 08:35:30,751 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Using parameterList:[zeca3@test.com]
+2023-01-17 08:35:30,784 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 2
+2023-01-17 08:35:30,785 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading remaining pages: [SELECT * FROM cliente WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+2023-01-17 08:35:30,785 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Using parameterList:[zeca8@test.com]
+2023-01-17 08:35:30,800 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 137ms
+2023-01-17 08:35:30,826 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=14}] and the following status: [COMPLETED] in 183ms
+2023-01-17 08:35:30,838 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 08:35:30,851 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 08:35:30,852 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 08:35:30,863 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 08:36:11,943 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 21272 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 08:36:11,945 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 08:36:12,587 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 08:36:12,894 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 08:36:12,975 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 08:36:12,995 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 08:36:13,157 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 08:36:13,305 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 08:36:13,395 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 1.916 seconds (JVM running for 2.663)
+2023-01-17 08:36:13,397 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 08:36:13,506 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=15}]
+2023-01-17 08:36:13,547 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 08:36:13,570 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 0
+2023-01-17 08:36:13,571 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading first page: [SELECT * FROM cliente ORDER BY email ASC LIMIT 5]
+2023-01-17 08:36:13,622 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 1
+2023-01-17 08:36:13,623 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading remaining pages: [SELECT * FROM cliente WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+2023-01-17 08:36:13,623 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Using parameterList:[zeca3@test.com]
+2023-01-17 08:36:13,669 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 2
+2023-01-17 08:36:13,670 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading remaining pages: [SELECT * FROM cliente WHERE ((email > ?)) ORDER BY email ASC LIMIT 5]
+2023-01-17 08:36:13,670 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Using parameterList:[zeca8@test.com]
+2023-01-17 08:36:13,691 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 143ms
+2023-01-17 08:36:13,706 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=15}] and the following status: [COMPLETED] in 177ms
+2023-01-17 08:36:13,710 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 08:36:13,721 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 08:36:13,721 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 08:36:13,730 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 08:36:48,324 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 21204 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 08:36:48,327 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 08:36:48,964 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 08:36:49,272 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 08:36:49,357 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 08:36:49,376 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 08:36:49,541 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 08:36:49,694 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 08:36:49,778 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 1.922 seconds (JVM running for 2.661)
+2023-01-17 08:36:49,781 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 08:36:49,901 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=16}]
+2023-01-17 08:36:49,946 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 08:36:49,966 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 0
+2023-01-17 08:36:49,966 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading first page: [SELECT * FROM cliente ORDER BY email ASC LIMIT 4]
+2023-01-17 08:36:50,050 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 104ms
+2023-01-17 08:36:50,066 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=16}] and the following status: [COMPLETED] in 141ms
+2023-01-17 08:36:50,077 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 08:36:50,091 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 08:36:50,091 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 08:36:50,100 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 08:37:10,399 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 10032 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 08:37:10,402 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 08:37:11,031 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 08:37:11,335 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 08:37:11,415 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 08:37:11,449 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 08:37:11,603 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 08:37:11,755 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 08:37:11,845 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 1.913 seconds (JVM running for 2.634)
+2023-01-17 08:37:11,846 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 08:37:11,956 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=17}]
+2023-01-17 08:37:11,995 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 08:37:12,013 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 0
+2023-01-17 08:37:12,014 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading first page: [SELECT * FROM cliente ORDER BY email ASC LIMIT 4]
+2023-01-17 08:37:12,071 ERROR o.s.b.c.s.AbstractStep [main] Encountered an error executing step jdbcStepXD in job jdbcCursorJob
+org.springframework.batch.core.step.skip.NonSkippableReadException: Non-skippable exception during read
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:105) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:126) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:118) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:71) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:407) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:331) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:273) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:258) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:208) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:152) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:413) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:136) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:320) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:149) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:128) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.24.jar:5.3.24]
+	at jdk.proxy2.$Proxy63.run(Unknown Source) ~[?:?]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.execute(JobLauncherApplicationRunner.java:199) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.executeLocalJobs(JobLauncherApplicationRunner.java:173) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.launchJobFromProperties(JobLauncherApplicationRunner.java:160) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:155) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:150) ~[spring-boot-autoconfigure-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:759) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:749) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.7.jar:2.7.7]
+	at com.developer.heart.leitorjdbcspringbatch.LeitorJdbcSpringBatchApplication.main(LeitorJdbcSpringBatchApplication.java:10) ~[classes/:?]
+Caused by: org.springframework.jdbc.UncategorizedSQLException: StatementCallback; uncategorized SQLException for SQL [SELECT * FROM cliente ORDER BY email ASC LIMIT 4]; SQL state [null]; error code [0]; Encerrando a execução - Cliente inválido zeca2@test.com; nested exception is java.sql.SQLException: Encerrando a execução - Cliente inválido zeca2@test.com
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1542) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.batch.item.database.JdbcPagingItemReader.doReadPage(JdbcPagingItemReader.java:209) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.item.database.AbstractPagingItemReader.doRead(AbstractPagingItemReader.java:110) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:99) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:87) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	... 45 more
+Caused by: java.sql.SQLException: Encerrando a execução - Cliente inválido zeca2@test.com
+	at com.developer.heart.leitorjdbcspringbatch.reader.JdbcPagingItemReaderConfig$1.mapRow(JdbcPagingItemReaderConfig.java:39) ~[classes/:?]
+	at com.developer.heart.leitorjdbcspringbatch.reader.JdbcPagingItemReaderConfig$1.mapRow(JdbcPagingItemReaderConfig.java:35) ~[classes/:?]
+	at org.springframework.batch.item.database.JdbcPagingItemReader$PagingRowMapper.mapRow(JdbcPagingItemReader.java:339) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:94) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:61) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:453) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:381) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.batch.item.database.JdbcPagingItemReader.doReadPage(JdbcPagingItemReader.java:209) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.item.database.AbstractPagingItemReader.doRead(AbstractPagingItemReader.java:110) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93) ~[spring-batch-infrastructure-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:99) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProvider.read(FaultTolerantChunkProvider.java:87) ~[spring-batch-core-4.3.7.jar:4.3.7]
+	... 45 more
+2023-01-17 08:37:12,083 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 88ms
+2023-01-17 08:37:12,104 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=17}] and the following status: [FAILED] in 123ms
+2023-01-17 08:37:12,110 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 08:37:12,123 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 08:37:12,123 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 08:37:12,139 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 08:37:38,179 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 12452 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 08:37:38,186 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 08:37:38,886 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 08:37:39,194 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 08:37:39,285 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 08:37:39,306 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 08:37:39,487 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 08:37:39,649 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 08:37:39,776 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 2.377 seconds (JVM running for 3.283)
+2023-01-17 08:37:39,778 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 08:37:40,002 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=18}]
+2023-01-17 08:37:40,074 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 08:37:40,105 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 0
+2023-01-17 08:37:40,106 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading first page: [SELECT * FROM cliente ORDER BY email ASC LIMIT 4]
+2023-01-17 08:37:40,186 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 112ms
+2023-01-17 08:37:40,212 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=18}] and the following status: [COMPLETED] in 171ms
+2023-01-17 08:37:40,217 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 08:37:40,236 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 08:37:40,237 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 08:37:40,259 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 08:37:48,941 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 20688 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 08:37:48,944 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 08:37:49,682 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 08:37:50,012 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 08:37:50,107 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 08:37:50,128 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 08:37:50,309 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 08:37:50,509 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 08:37:50,636 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 2.247 seconds (JVM running for 3.2)
+2023-01-17 08:37:50,638 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 08:37:50,805 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=19}]
+2023-01-17 08:37:50,857 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 08:37:50,886 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 0
+2023-01-17 08:37:50,887 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading first page: [SELECT * FROM cliente ORDER BY email ASC LIMIT 4]
+2023-01-17 08:37:50,970 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 113ms
+2023-01-17 08:37:51,004 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=19}] and the following status: [COMPLETED] in 157ms
+2023-01-17 08:37:51,018 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 08:37:51,039 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 08:37:51,040 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 08:37:51,064 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2023-01-17 08:38:29,193 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Starting LeitorJdbcSpringBatchApplication using Java 17.0.5 on Aurora with PID 11680 (C:\sefaz\gitlab\LeitorJDBC-SpringBatch\target\classes started by leona in C:\sefaz\gitlab\LeitorJDBC-SpringBatch)
+2023-01-17 08:38:29,196 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17 08:38:29,839 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-17 08:38:30,137 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-17 08:38:30,218 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2023-01-17 08:38:30,237 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2023-01-17 08:38:30,367 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2023-01-17 08:38:30,537 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-17 08:38:30,624 INFO c.d.h.l.LeitorJdbcSpringBatchApplication [main] Started LeitorJdbcSpringBatchApplication in 1.911 seconds (JVM running for 2.65)
+2023-01-17 08:38:30,625 INFO o.s.b.a.b.JobLauncherApplicationRunner [main] Running default command line with: []
+2023-01-17 08:38:30,734 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] launched with the following parameters: [{run.id=20}]
+2023-01-17 08:38:30,779 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcStepXD]
+2023-01-17 08:38:30,799 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 0
+2023-01-17 08:38:30,799 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading first page: [SELECT * FROM cliente ORDER BY email ASC LIMIT 4]
+2023-01-17 08:38:30,842 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 1
+2023-01-17 08:38:30,843 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading remaining pages: [SELECT * FROM cliente WHERE ((email > ?)) ORDER BY email ASC LIMIT 4]
+2023-01-17 08:38:30,843 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Using parameterList:[zeca2@test.com]
+2023-01-17 08:38:30,883 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Reading page 2
+2023-01-17 08:38:30,883 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] SQL used for reading remaining pages: [SELECT * FROM cliente WHERE ((email > ?)) ORDER BY email ASC LIMIT 4]
+2023-01-17 08:38:30,884 DEBUG o.s.b.i.d.JdbcPagingItemReader [main] Using parameterList:[zeca6@test.com]
+2023-01-17 08:38:30,925 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcStepXD] executed in 145ms
+2023-01-17 08:38:30,940 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorJob]] completed with the following parameters: [{run.id=20}] and the following status: [COMPLETED] in 184ms
+2023-01-17 08:38:30,943 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-17 08:38:30,960 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-17 08:38:30,960 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2023-01-17 08:38:30,971 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
