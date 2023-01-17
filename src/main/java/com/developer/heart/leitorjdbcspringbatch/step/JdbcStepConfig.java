@@ -5,7 +5,7 @@ import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.batch.item.ItemWriter;
-import org.springframework.batch.item.database.JdbcCursorItemReader;
+import org.springframework.batch.item.database.JdbcPagingItemReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
@@ -18,11 +18,11 @@ public class JdbcStepConfig {
     private StepBuilderFactory stepBuilderFactory;
 
     @Bean
-    public Step jdbcStep(JdbcCursorItemReader<Cliente> jdbcCursorItemReader, ItemWriter<Cliente> itemWriter) {
+    public Step jdbcStep(JdbcPagingItemReader<Cliente> jdbcPagingItemReader, ItemWriter<Cliente> itemWriter) {
         return stepBuilderFactory
                 .get("jdbcStepXD")
                 .<Cliente, Cliente>chunk(1)
-                .reader(jdbcCursorItemReader)
+                .reader(jdbcPagingItemReader)
                 .writer(itemWriter)
                 .build();
     }
